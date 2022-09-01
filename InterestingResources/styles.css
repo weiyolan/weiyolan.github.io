@@ -1,0 +1,36 @@
+html {
+    background-color: azure;
+    font-family: 'Raleway';
+    text-align: center;
+    /* display: flex;
+    justify-content: center; */
+}
+
+body {
+    width:1000px;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+h1 {
+    margin:40px auto;
+}
+table {
+    border-bottom: 5px solid rgb(130, 166, 255);
+}
+thead {
+    background-color:rgb(130, 166, 255);
+    border: 1px solid rgb(130, 166, 255);
+    color:white;
+}
+
+td {
+    margin:0;
+    padding: 0;
+}
+
+.code {
+    font-weight: bold;
+}

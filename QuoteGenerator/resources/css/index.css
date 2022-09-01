@@ -1,0 +1,113 @@
+
+
+:root{
+    --background-color: rgba(255, 255, 255, 0);
+}
+
+html{
+    font-family: "Poppins";
+    text-align: center;
+    height:100%;
+    overflow: hidden;
+    /* margin:0; */
+}
+
+h1,h2 {
+    font-weight: 600;
+}
+h1{
+    margin-top: 30px;
+}
+span {
+    text-decoration: underline;
+}
+
+body {
+    background-color: hsl(20deg,60%, 80%);
+    display: grid;
+    height:100%;
+    margin:0;
+    grid-template-columns: 80%;
+    grid-template-rows: 25% auto 50px;
+    grid-template-areas:    "header"
+                            "main"
+                            "footer";
+    /* gap: 10px 10px; */
+
+    /*--- Grid alignment to page ---*/
+    justify-content: center;
+    /*--- Item alignment within grid ---*/
+    justify-items: stretch;
+    /* align-items: center; */
+    /* place-items: stretch;; */
+}
+
+header {
+    grid-area: "header";
+    /* background-color: #759515a6; */
+    /* align-self: start; */
+}
+
+main {
+    display:flex;
+    flex-direction: column;
+    grid-area: "main";
+    justify-self: center;
+    height: 100%;
+    width: 80%;
+    /* background-color: rgba(68, 96, 153, 0.366); */
+    align-items: center;
+}
+
+.quote {
+    display: flex;
+    height:80%;
+    width:80%;
+    justify-content: center;
+    align-items: center;
+    /* margin:0 auto; */
+    /* align-content: center; */
+}
+
+#quote {
+    /* display: block; */
+    font-family: "Dancing Script";
+    font-size: 1.4rem;
+    /* font-style: italic; */
+    /* font-weight: bolder; */
+    /* height:50px; */
+    /* width: auto; */
+    /* display: block; */
+    /* margin: auto 0; */
+}
+
+#button {
+    /* display: block; */
+    width:200px;
+    align-self: center;
+
+    /* width:20%; */
+    padding: 10px; 
+    border: 2px solid hsl(20deg,70%, 60%);
+    background-color: hsl(20deg,62%, 70%);
+    margin: 20px auto;
+    transition:all 0.2s ease-out;
+    border-radius: 20px;
+}
+
+#button:hover{
+    cursor:pointer;
+    background-color:hsl(20deg,62%, 65%);
+    transform: scale(1.02);
+}
+
+#button:active{
+    background-color:hsl(20deg,62%, 69%);
+    transform: scale(1.05);
+}
+
+footer {
+    grid-area: "footer";
+    /* align-self: end; */
+    /* background-color: #3ccac5a6; */
+}
